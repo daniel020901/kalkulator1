@@ -1,1 +1,72 @@
-hello world dicoba
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator by daniel ILY</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body >
+    
+    <div class="calculator-grid">
+        <h2 > Kalkulator Ily</h2>
+        <input type="text" id="result" disabled>
+        <div>
+
+        <button class="operator"  onclick="clearResult()">AC</button>
+        <button class="operator" onclick = "backslide()">DEL</button>
+        <button class="operator" onclick="getResult('%')">%</button>
+        <button class="operator"  onclick="getResult('/')">÷</button>
+        </div>
+        <div>
+        <button  onclick="getResult('1')">1</button>
+        <button onclick="getResult('2')">2</button>
+        <button onclick="getResult('3')">3</button>
+        <button class="operator" onclick="getResult('*')" >*</button>
+        </div>
+        <div>
+        <button onclick="getResult('4')">4</button>
+        <button onclick="getResult('5')">5</button>
+        <button onclick="getResult('6')">6</button>
+        <button class="operator" onclick="getResult('+')">+</button>
+        </div>
+        <div>
+        <button onclick="getResult('7')">7</button>
+        <button onclick="getResult('8')">8</button>
+        <button onclick="getResult('9')">9</button>
+        <button class="operator" onclick="getResult('-')">-</button>
+        </div>
+        <div>
+        <button onclick="getResult('00')">00</button>
+        <button onclick="getResult('.')">.</button>
+        <button onclick="getResult('0')">0</button>
+        <button class="equalBtn"  onclick="calculate()">=</button>
+    
+    
+</body>
+<script >
+    
+		let result = document.getElementById('result');
+
+		function getResult(num) {
+			result.value += num;
+		}
+
+		function clearResult() {
+			result.value = '';
+		}
+
+		function calculate() {
+			result.value = eval(result.value);
+		}
+
+		function backslide() {
+			result.value = result.value.slice(0, -1);
+		}
+	
+</script>
+
+ 
+</html>

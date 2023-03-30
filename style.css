@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    background-image: url('https://i0.wp.com/images2.alphacoders.com/644/644457.jpg?ssl=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+.calculator-grid h2{
+    text-align: center;
+				text-transform: uppercase;
+                font-family:'Times New Roman', Times, serif;
+				color:cyan;
+				text-decoration: blink;
+}
+
+.calculator-grid{
+    border: 2px solid #717371;
+    padding: 20px;
+    border-radius: 10px;
+    background:#717371;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0,5);
+}
+
+input {
+    width: 360px;
+    border: 2px solid dodgerblue;
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+input   ::placeholder{
+    color:#fff
+    ;
+}
+button{
+    border:1px solid black;
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 90%;
+    background: transparent;
+    color: #fff;;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+
+}
+.equalBtn{
+    background-color: red;
+}
+.operator{
+    color: #6dee0a;
+}
